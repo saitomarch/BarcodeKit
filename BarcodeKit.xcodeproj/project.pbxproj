@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311027052100547E007AED9D /* BarcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311026FB2100547E007AED9D /* BarcodeKit.framework */; };
+		3110270A2100547E007AED9D /* BarcodeKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 311027092100547E007AED9D /* BarcodeKitTests.m */; };
+		3110270C21005483007AED9D /* BarcodeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 311026FE2100547E007AED9D /* BarcodeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311027272100560F007AED9D /* QRCodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 311027252100560F007AED9D /* QRCodeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311027282100560F007AED9D /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 311027262100560F007AED9D /* QRCodeGenerator.m */; };
+		3110272B21005699007AED9D /* QRCodeErrorCorrection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110272A21005699007AED9D /* QRCodeErrorCorrection.m */; };
+		31F9C8E021006BE700A211D6 /* CIImage+NonInterpolatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F9C8DF21006BE700A211D6 /* CIImage+NonInterpolatedImage.h */; };
+		31F9C8E221006C0E00A211D6 /* CIImage+NonInterpolatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F9C8E121006C0E00A211D6 /* CIImage+NonInterpolatedImage.m */; };
+		31F9C8E421007F1900A211D6 /* QRCodeGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F9C8E321007F1900A211D6 /* QRCodeGeneratorTests.m */; };
+		31F9C8E52100823000A211D6 /* QRCodeErrorCorrection.h in Headers */ = {isa = PBXBuildFile; fileRef = 311027292100564D007AED9D /* QRCodeErrorCorrection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F9C9022105618400A211D6 /* Code128BarcodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F9C9002105618400A211D6 /* Code128BarcodeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F9C9032105618400A211D6 /* Code128BarcodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F9C9012105618400A211D6 /* Code128BarcodeGenerator.m */; };
+		31F9C907210561C900A211D6 /* CommonGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F9C905210561C900A211D6 /* CommonGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F9C908210561C900A211D6 /* CommonGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F9C906210561C900A211D6 /* CommonGenerator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		311027062100547E007AED9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311026F22100547E007AED9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311026FA2100547E007AED9D;
+			remoteInfo = BarcodeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		311026FB2100547E007AED9D /* BarcodeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarcodeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		311026FE2100547E007AED9D /* BarcodeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarcodeKit.h; sourceTree = "<group>"; };
+		311026FF2100547E007AED9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311027042100547E007AED9D /* BarcodeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311027092100547E007AED9D /* BarcodeKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarcodeKitTests.m; sourceTree = "<group>"; };
+		3110270B21005483007AED9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3110271621005585007AED9D /* UniversalFramework_Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Framework.xcconfig; sourceTree = "<group>"; };
+		3110271721005585007AED9D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3110271821005585007AED9D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3110271921005585007AED9D /* UniversalFramework_Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Base.xcconfig; sourceTree = "<group>"; };
+		3110271A21005585007AED9D /* UniversalFramework_Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Test.xcconfig; sourceTree = "<group>"; };
+		311027252100560F007AED9D /* QRCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		311027262100560F007AED9D /* QRCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		311027292100564D007AED9D /* QRCodeErrorCorrection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeErrorCorrection.h; sourceTree = "<group>"; };
+		3110272A21005699007AED9D /* QRCodeErrorCorrection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeErrorCorrection.m; sourceTree = "<group>"; };
+		31F9C8DF21006BE700A211D6 /* CIImage+NonInterpolatedImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CIImage+NonInterpolatedImage.h"; sourceTree = "<group>"; };
+		31F9C8E121006C0E00A211D6 /* CIImage+NonInterpolatedImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CIImage+NonInterpolatedImage.m"; sourceTree = "<group>"; };
+		31F9C8E321007F1900A211D6 /* QRCodeGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeGeneratorTests.m; sourceTree = "<group>"; };
+		31F9C9002105618400A211D6 /* Code128BarcodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Code128BarcodeGenerator.h; sourceTree = "<group>"; };
+		31F9C9012105618400A211D6 /* Code128BarcodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Code128BarcodeGenerator.m; sourceTree = "<group>"; };
+		31F9C905210561C900A211D6 /* CommonGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonGenerator.h; sourceTree = "<group>"; };
+		31F9C906210561C900A211D6 /* CommonGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonGenerator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311026F72100547E007AED9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311027012100547E007AED9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311027052100547E007AED9D /* BarcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311026F12100547E007AED9D = {
+			isa = PBXGroup;
+			children = (
+				3110271521005585007AED9D /* xcconfigs */,
+				311026FD2100547E007AED9D /* BarcodeKit */,
+				311027082100547E007AED9D /* BarcodeKitTests */,
+				311026FC2100547E007AED9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311026FC2100547E007AED9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311026FB2100547E007AED9D /* BarcodeKit.framework */,
+				311027042100547E007AED9D /* BarcodeKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311026FD2100547E007AED9D /* BarcodeKit */ = {
+			isa = PBXGroup;
+			children = (
+				31F9C904210561BD00A211D6 /* Common */,
+				31F9C8FF2105616C00A211D6 /* Code128Barcode */,
+				31F9C8DE21006BBC00A211D6 /* Extensions */,
+				3110272421005602007AED9D /* QRCode */,
+				311026FE2100547E007AED9D /* BarcodeKit.h */,
+				311026FF2100547E007AED9D /* Info.plist */,
+			);
+			path = BarcodeKit;
+			sourceTree = "<group>";
+		};
+		311027082100547E007AED9D /* BarcodeKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				311027092100547E007AED9D /* BarcodeKitTests.m */,
+				31F9C8E321007F1900A211D6 /* QRCodeGeneratorTests.m */,
+				3110270B21005483007AED9D /* Info.plist */,
+			);
+			path = BarcodeKitTests;
+			sourceTree = "<group>";
+		};
+		3110271521005585007AED9D /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				3110271721005585007AED9D /* LICENSE */,
+				3110271821005585007AED9D /* README.md */,
+				3110271921005585007AED9D /* UniversalFramework_Base.xcconfig */,
+				3110271621005585007AED9D /* UniversalFramework_Framework.xcconfig */,
+				3110271A21005585007AED9D /* UniversalFramework_Test.xcconfig */,
+			);
+			name = xcconfigs;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		3110272421005602007AED9D /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				311027292100564D007AED9D /* QRCodeErrorCorrection.h */,
+				3110272A21005699007AED9D /* QRCodeErrorCorrection.m */,
+				311027252100560F007AED9D /* QRCodeGenerator.h */,
+				311027262100560F007AED9D /* QRCodeGenerator.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		31F9C8DE21006BBC00A211D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31F9C8DF21006BE700A211D6 /* CIImage+NonInterpolatedImage.h */,
+				31F9C8E121006C0E00A211D6 /* CIImage+NonInterpolatedImage.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		31F9C8FF2105616C00A211D6 /* Code128Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				31F9C9002105618400A211D6 /* Code128BarcodeGenerator.h */,
+				31F9C9012105618400A211D6 /* Code128BarcodeGenerator.m */,
+			);
+			path = Code128Barcode;
+			sourceTree = "<group>";
+		};
+		31F9C904210561BD00A211D6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				31F9C905210561C900A211D6 /* CommonGenerator.h */,
+				31F9C906210561C900A211D6 /* CommonGenerator.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		311026F82100547E007AED9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311027272100560F007AED9D /* QRCodeGenerator.h in Headers */,
+				31F9C8E52100823000A211D6 /* QRCodeErrorCorrection.h in Headers */,
+				31F9C8E021006BE700A211D6 /* CIImage+NonInterpolatedImage.h in Headers */,
+				3110270C21005483007AED9D /* BarcodeKit.h in Headers */,
+				31F9C9022105618400A211D6 /* Code128BarcodeGenerator.h in Headers */,
+				31F9C907210561C900A211D6 /* CommonGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		311026FA2100547E007AED9D /* BarcodeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3110270F21005483007AED9D /* Build configuration list for PBXNativeTarget "BarcodeKit" */;
+			buildPhases = (
+				311026F62100547E007AED9D /* Sources */,
+				311026F72100547E007AED9D /* Frameworks */,
+				311026F82100547E007AED9D /* Headers */,
+				311026F92100547E007AED9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarcodeKit;
+			productName = BarcodeKit;
+			productReference = 311026FB2100547E007AED9D /* BarcodeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		311027032100547E007AED9D /* BarcodeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3110271221005483007AED9D /* Build configuration list for PBXNativeTarget "BarcodeKitTests" */;
+			buildPhases = (
+				311027002100547E007AED9D /* Sources */,
+				311027012100547E007AED9D /* Frameworks */,
+				311027022100547E007AED9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311027072100547E007AED9D /* PBXTargetDependency */,
+			);
+			name = BarcodeKitTests;
+			productName = BarcodeKitTests;
+			productReference = 311027042100547E007AED9D /* BarcodeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311026F22100547E007AED9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Project Flora";
+				TargetAttributes = {
+					311026FA2100547E007AED9D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					311027032100547E007AED9D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 311026F52100547E007AED9D /* Build configuration list for PBXProject "BarcodeKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 311026F12100547E007AED9D;
+			productRefGroup = 311026FC2100547E007AED9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311026FA2100547E007AED9D /* BarcodeKit */,
+				311027032100547E007AED9D /* BarcodeKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311026F92100547E007AED9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311027022100547E007AED9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311026F62100547E007AED9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F9C908210561C900A211D6 /* CommonGenerator.m in Sources */,
+				31F9C9032105618400A211D6 /* Code128BarcodeGenerator.m in Sources */,
+				3110272B21005699007AED9D /* QRCodeErrorCorrection.m in Sources */,
+				311027282100560F007AED9D /* QRCodeGenerator.m in Sources */,
+				31F9C8E221006C0E00A211D6 /* CIImage+NonInterpolatedImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311027002100547E007AED9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3110270A2100547E007AED9D /* BarcodeKitTests.m in Sources */,
+				31F9C8E421007F1900A211D6 /* QRCodeGeneratorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		311027072100547E007AED9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311026FA2100547E007AED9D /* BarcodeKit */;
+			targetProxy = 311027062100547E007AED9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3110270D21005483007AED9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110271921005585007AED9D /* UniversalFramework_Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3110270E21005483007AED9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110271921005585007AED9D /* UniversalFramework_Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3110271021005483007AED9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110271621005585007AED9D /* UniversalFramework_Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WT6BA589VL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = BarcodeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.project-flora.BarcodeKit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3110271121005483007AED9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110271621005585007AED9D /* UniversalFramework_Framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WT6BA589VL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = BarcodeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.project-flora.BarcodeKit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3110271321005483007AED9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110271A21005585007AED9D /* UniversalFramework_Test.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WT6BA589VL;
+				INFOPLIST_FILE = BarcodeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.project-flora.BarcodeKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3110271421005483007AED9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110271A21005585007AED9D /* UniversalFramework_Test.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WT6BA589VL;
+				INFOPLIST_FILE = BarcodeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.project-flora.BarcodeKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311026F52100547E007AED9D /* Build configuration list for PBXProject "BarcodeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3110270D21005483007AED9D /* Debug */,
+				3110270E21005483007AED9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3110270F21005483007AED9D /* Build configuration list for PBXNativeTarget "BarcodeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3110271021005483007AED9D /* Debug */,
+				3110271121005483007AED9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3110271221005483007AED9D /* Build configuration list for PBXNativeTarget "BarcodeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3110271321005483007AED9D /* Debug */,
+				3110271421005483007AED9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311026F22100547E007AED9D /* Project object */;
+}
